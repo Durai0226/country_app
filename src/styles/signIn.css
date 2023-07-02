@@ -1,0 +1,358 @@
+.main_Container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5rem;
+  width: 100%;
+  
+}
+
+.signIn_Container {
+  width: 50%;
+  height: auto;
+}
+.heading {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.signIn {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 2rem;
+  width: 50%;
+  margin-bottom: 0rem;
+  line-height: 4.2rem;
+  color: #3d3d3d;
+}
+.createAccount {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.link_Container {
+  width: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2.6rem;
+  color: #3d3d3d;
+}
+.link {
+  color: #587fff;
+}
+.form_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  width: 50%;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.inputLabel {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.label1 {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: rgb(89 77 77);
+}
+
+.input1 {
+  border-width: 2px;
+  padding: 12px 16px;
+  border-style: solid;
+  border-color: #3e3e3e;
+  background-color: rgb(255 255 255);
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(30 16 12);
+  outline: none;
+}
+.input1::placeholder {
+  font-weight: 600;
+  font-size: 1rem;
+
+  line-height: 2.1rem;
+  color: #3d3d3d;
+}
+.img1 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 28%;
+  left: 90%;
+}
+.checkbox_Container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #000000;
+  background: #f2f2f2;
+  margin-right: 8px;
+}
+input[type="checkbox"]:checked {
+  background-color: #3d3d3d;
+}
+.checkBox_text {
+  font-weight: 600;
+  font-size: 1rem;
+
+  line-height: 2.1rem;
+  color: #3d3d3d;
+}
+.checkbox_Contain {
+  width: 50%;
+  align-items: center;
+  display: flex;
+}
+.btn_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Btn {
+  border-width: 2px;
+  padding: 12px 16px;
+  border-style: solid;
+  border-color: #3e3e3e;
+  color: #fcfcfc;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2.1rem;
+  width: 50%;
+
+  background-color: rgb(30 16 12);
+  outline: none;
+  margin-top: 1.5rem;
+}
+.signUp_Btn {
+  border-width: 2px;
+  padding: 12px 16px;
+  border-style: solid;
+  border-color: #3e3e3e;
+  color: #fcfcfc;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2.1rem;
+  width: 50%;
+
+  background-color: rgb(30 16 12);
+  outline: none;
+  margin-top: 1.5rem;
+}
+.line_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.or_Container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+.line {
+  border: 2px solid #cfcfcf;
+  width: 6rem;
+  height: 1px;
+}
+.line_1 {
+  border: 2px solid #cfcfcf;
+  width: 6rem;
+  height: 1px;
+}
+.refer_text {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2.1rem;
+  color: #3d3d3d;
+}
+.social_Container {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.social_link {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  cursor: pointer;
+}
+.img_Container {
+  display: flex;
+  justify-content: flex-start;
+
+}
+.front_img {
+  width: 22rem;
+  height: auto;
+}
+.error{
+  display: flex;
+
+  margin-top: 1rem;
+  color: red;
+  font-family: "Noto Sans";
+  font-weight: 600;
+  font-size: 1rem;
+}
+.error_1{
+  display: flex;
+  margin-bottom: 1rem;
+  color: red;
+  font-family: "Noto Sans";
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+@media screen and (max-width: 1030px) {
+  .main_Container {
+    padding: 2rem;
+  }
+  .front_img {
+    width: 22rem;
+    height: auto;
+  }  
+  .line {
+    border: 2px solid #cfcfcf;
+    width: 4rem;
+    height: 1px;
+  }
+  .line_1 {
+    border: 2px solid #cfcfcf;
+    width: 4rem;
+    height: 1px;
+  }
+  .signIn_Container {
+    width: 70%;
+    height: auto;
+  }
+  .signIn {
+  
+    width: 70%;
+ 
+  }
+  .signUp_Btn {
+  
+    width: 100%;
+ 
+  }
+  .checkbox_Contain {
+    width: 70%;
+  
+  }
+  .form {
+    width: 70%;
+  }
+  .or_Container {
+    width: 70%;
+  
+  }
+  .social_link {
+
+    width: 70%;
+  }
+  .Btn{
+    width: 70%;
+  }
+  .link_Container {
+    width: 70%;
+
+  }
+ 
+}
+@media screen and (max-width: 780px) {
+  .img_Container {
+    display: none;
+
+  }
+  .signIn_Container {
+    width: 70%;
+    height: auto;
+  }
+  .signIn {
+  
+    width: 70%;
+ 
+  }
+  .checkbox_Contain {
+    width: 70%;
+  
+  }
+  .form {
+    width: 70%;
+  }
+  .or_Container {
+    width: 70%;
+  
+  }
+  .social_link {
+
+    width: 70%;
+  }
+  .Btn{
+    width: 70%;
+  }
+  .link_Container {
+    width: 70%;
+
+  }
+}
+@media screen and (max-width: 480px) {
+  .img_Container {
+    display: none;
+
+  }
+  .signIn_Container {
+    width: 90%;
+    height: auto;
+  }
+  .signIn {
+  
+    width: 90%;
+ 
+  }
+  .checkbox_Contain {
+    width: 90%;
+  
+  }
+  .form {
+    width: 90%;
+  }
+  .or_Container {
+    width: 90%;
+  
+  }
+  .social_link {
+
+    width: 90%;
+  }
+  .Btn{
+    width: 90%;
+  }
+  .link_Container {
+    width: 90%;
+
+  }
+}
