@@ -7,7 +7,6 @@ import linkedin from "../assets/Svg/linkedin.svg";
 import twitter from "../assets/Svg/twitter.svg";
 import "../styles/countryStyle.css";
 
-// Card component
 const CountryCard = ({ flag, name, region }) => {
   return (
     <div className="card">

@@ -30,7 +30,6 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Focus the input field with an error
     if (focusedField) {
       document.getElementById(focusedField).focus();
     }
@@ -58,7 +57,6 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Perform validation here
     if (username.trim() === "") {
       setUsernameError("Please enter a username.");
       setFocusedField("usernameInput");
@@ -81,7 +79,6 @@ const SignUp = () => {
       return;
     }
 
-    // Save data to local storage
     localStorage.setItem("username", username);
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
@@ -91,11 +88,10 @@ const SignUp = () => {
       navigate("/signin");
     }, 2000);
 
-    // Clear form fields
     dispatch(clearAuthData());
   };
   const handleSignInLinkClick = () => {
-    navigate("/signin"); // Replace "/signin" with the actual URL of your sign-in page
+    navigate("/signin");
   };
   return (
     <div className="main_Container">

@@ -30,29 +30,24 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Retrieve data from localStorage
     const storedUsername = localStorage.getItem("username");
     const storedPassword = localStorage.getItem("password");
     const storedEmail = localStorage.getItem("email");
 
-    // Perform validation
     let isValid = true;
 
     if (username.trim() === "") {
       setUsernameValidationError("Username or email is required");
       isValid = false;
     } else {
-      // Check if the input is a valid email address
       const isEmail = /\S+@\S+\.\S+/.test(username);
 
       if (isEmail) {
-        // If it's an email, compare with the storedEmail
         if (username !== storedEmail) {
           setUsernameValidationError("Invalid email or password");
           isValid = false;
         }
       } else {
-        // If it's a username, compare with the storedUsername
         if (username !== storedUsername) {
           setUsernameValidationError("Invalid username or password");
           isValid = false;
@@ -74,17 +69,15 @@ const SignIn = () => {
         toast.error("Invalid username, email, or password");
       } else {
         if (keepSignedIn) {
-          // Store username and password in localStorage
           localStorage.setItem("keepSignedIn", true);
         }
-        // Reset form values
+
         dispatch(setUsername(""));
         dispatch(setPassword(""));
 
         setUsernameValidationError("");
         setPasswordValidationError("");
 
-        // Update sign-in success state
         toast.success("Sign In is successful!");
 
         setTimeout(() => {
